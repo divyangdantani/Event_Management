@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eventScreen.Fragment_Event"
+    android:background="@color/iron">
+
+
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+
+                <TextView
+                    android:id="@+id/tvEventdetailsTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/darkGray"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:text="Navratri Garba"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ECF0F1"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/LinearLayout123"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="50dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="30dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date and Time : "
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#333333"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvEventdetailsDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/textView23"
+                                android:layout_toEndOf="@+id/textView23"
+                                android:layout_toRightOf="@+id/textView23"
+                                android:text="May 14, 2018"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/textView123"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Type : "
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#333333"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvEventdetailsaType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/textView123"
+                                android:layout_toEndOf="@+id/textView123"
+                                android:layout_toRightOf="@+id/textView123"
+                                android:text="9:00 PM"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/textView37"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Guest : "
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#333333"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvEventdetailsaguest"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/textView37"
+                                android:layout_toEndOf="@+id/textView37"
+                                android:layout_toRightOf="@+id/textView37"
+                                android:text="9:00 PM"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/textView35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Duration: "
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#333333"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvEventdetailsDuration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/textView35"
+                                android:layout_toEndOf="@+id/textView35"
+                                android:layout_toRightOf="@+id/textView35"
+                                android:text="3 hour"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="15dp">
+
+                            <TextView
+                                android:id="@+id/textView36"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Location: "
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#333333"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvEventdetailsLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_toEndOf="@+id/textView36"
+                                android:layout_toRightOf="@+id/textView36"
+                                android:text="Garden"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#333333"
+                                android:textSize="13sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tvEventdetailsBody"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:elegantTextHeight="false"
+                            android:lineSpacingMultiplier="1.2"
+                            android:text="All Members are invited with whole family"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#333333"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+
+            <!-- &lt;!&ndash; Comments Fragment&ndash;&gt;
+             <fragment
+                 android:name="com.csgroup.eventsched.CommentsFragment"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/comments_fragment"/>-->
+
+
+
+
+
+        </LinearLayout>
+   <!-- </ScrollView>-->
+
+
+
+    <!-- <android.support.design.widget.FloatingActionButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentStart="true"
+         android:layout_alignTop="@+id/add_fab"
+         android:layout_marginStart="26dp"
+         app:fabSize="normal"
+         android:id="@+id/fab_cal"
+         android:src="@drawable/ic_cal_fab"
+         android:elevation="50dp"/>-->
+</RelativeLayout>

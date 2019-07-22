@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightGray"
+    tools:context="com.eventScreen.EventScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="25dp">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="Fill Event Details"
+           android:gravity="center"
+           android:textSize="25sp"
+           android:textStyle="bold"
+           android:shadowColor="@color/iron"
+           android:elevation="15dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="5dp"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:id="@+id/etEventTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title" />
+        </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Types of Event"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="5dp"/>
+            <Spinner
+                android:id="@+id/eventType"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp">
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="5dp"/>
+            <Spinner
+                android:id="@+id/etEventLocation"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp">
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginTop="5dp"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/etEventDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Event Description" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guest Details"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/eventGuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:hint="No.of Guest"
+                android:inputType="number"/>
+
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/etDurationHours"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Hours"
+                        android:inputType="number" />
+                <EditText
+                    android:id="@+id/etDurationMinutes"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Minutes"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/containerMembers">
+
+               <!-- <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Members"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ListView
+                    android:id="@+id/listview_members"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />-->
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/dateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date and Time"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+           <!-- <Spinner
+                android:id="@+id/spinTime"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp" />-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/btnAddDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="80dp"
+                    android:background="@drawable/button_shape"
+                    android:text="Date"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnAddTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_toEndOf="@+id/btnAddDate"
+                    android:background="@drawable/button_shape"
+                    android:text="Time"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:layout_marginTop="10dp"
+                    android:gravity="end"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_below="@id/btnAddDate"
+                    android:paddingEnd="5dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/btnAddTime"
+                    android:gravity="center_horizontal"
+                    android:text="Time"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:visibility="gone"/>
+
+                <!--<Button
+                    android:id="@+id/btnFilterOptions"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/button_shape"
+                    android:text="filter option"
+                    android:textColor="@color/white"/>-->
+                <!--<Button
+                    android:id="@+id/btnRefreshSuggestions"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/btnFilterOptions"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/btnFilterOptions"
+                    android:layout_below="@+id/btnFilterOptions"
+                    android:background="@drawable/button_shape"
+                    android:text="refresh" />-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginBottom="20dp">
+
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"></FrameLayout>
+
+                <Button
+                    android:id="@+id/btnEventCreate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="30"
+                    android:text="Create"
+                    android:background="@drawable/button_shape"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btnEventCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:text="Cancel"
+                    android:background="@drawable/button_shape"
+                    android:elevation="25dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

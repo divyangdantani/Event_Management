@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.divyangdantani.eventmanagementfinal.PaypalPaymentActivity"
+    android:background="@color/iron">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="select payment method"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/darkGray" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/LinearLayout123"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="50dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/txtAmount"
+                            android:gravity="end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PAY $100"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/darkGray"
+                            android:shadowColor="@color/lightGray"/>
+                        <!--<RadioGroup
+                            android:id="@+id/radioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+                            <RadioButton
+                                android:id="@+id/radioPaypal"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="pay with paypal"
+                                android:textAllCaps="true" />
+                            <RadioButton
+                                android:id="@+id/radioOffline"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="offline"
+                                android:textAllCaps="true" />
+                        </RadioGroup>-->
+
+                        <EditText
+                            android:id="@+id/amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Amount"
+                            android:text="100"
+                            android:editable="false"
+                            android:layout_marginTop="25dp"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnPayment33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_shape"
+                        android:text="Proceed to pay"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:elevation="20dp"
+                        android:clickable="true" />
+
+                </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NOTE :- This amount will be added in Society Fund"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textSize="17dp"
+                    android:shadowColor="@color/lightGray"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

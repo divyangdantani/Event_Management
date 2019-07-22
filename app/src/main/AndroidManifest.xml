@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.divyangdantani.eventmanagementfinal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/event"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Dark"
+        tools:node="replace">
+        <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
+        <activity android:name=".Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name="com.homeScreen.MemberDetails_Card" />
+        <activity android:name="com.homeScreen.Links_Card" />
+        <activity android:name="com.homeScreen.Add_Card" />
+        <activity android:name="com.homeScreen.Notification_Card" />
+        <activity android:name="com.homeScreen.Payment_Card" />
+        <activity android:name=".Upload_Image" />
+        <activity android:name="com.eventScreen.EventScreen" />
+        <activity android:name=".BottomActivity" />
+        <activity android:name=".PaypalPaymentActivity" />
+        <activity android:name=".PaymentDetails" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"/>
+        <!--
+            <activity
+            android:name="com.homeScreen.Member_Dialog"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        -->
+    </application>
+
+</manifest>
